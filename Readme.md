@@ -71,3 +71,60 @@ Matrik Evaluasi untuk Classification
 Hands-on:
 https://colab.research.google.com/drive/1dqkwLgN2ArWePNVDZX_8nR1NWZVPu0-l?usp=sharing
 
+---
+
+# Eksplorasi Unsupervised Learning: Teknik dan Penerapan Praktis by Ivan Andrianto
+Unsupervised learning adalah metode machine learning di mana model belajar dari data yang tidak memiliki label. Tujuannya adalah untuk menemukan pola, struktur, atau hubungan tersembunyi dalam data tanpa bantuan supervisi manusia.  
+  
+## Jenis-jenis Unsupervised Learning
+- Clustering (bagi berdasarkan kemiripan)
+- Sistem Rekomendasi (memprediksi preferensi pengguna)
+- Association (menemukan relasi menarik)
+- Deteksi Anomali (mendeteksi data yang tidak sesuai pola)
+- Dimensionality Reduction (mengurangi jumlah fitur/data)
+
+### Algoritma Clustering
+Mengelompokan contoh-contoh yang tidak berlabel ke dalam cluster berdasarkan pola yang mirip/sama.
+    
+Jenis-jenis clustering algorithm:
+- Centroid-based clustering
+- Density-based clustering
+- Distribution-based clustering
+- Hierarchical clustering
+  
+#### Algoritma K-means
+- Secara acak memilih K cluster centroid
+- Menetapkan setiap titik ke centroid terdekat untuk mendapatkan K cluster awal
+- Menghitung ulang posisi centroid berdasarkan rata-rata titik pada masing-masing cluster
+- Mengulangi proses penetapan titik ke centroid terdekat dan perhitungan ulang centroid hingga posisi centroid tidak berubah (konvergen) atau jumlah iterasi maksimum tercapai
+- Hasil akhir adalah pembagian data ke dalam K cluster berdasarkan kemiripan  
+  
+Cost function pada algoritma K-means:  
+Fungsi ini menghitung rata-rata dari jarak kuadrat antara setiap titik data dengan centroid dari cluster tempat titik tersebut berada.
+    
+Bagaimana memilih jumlah cluster?
+Kita bisa menggunakan elbow method.
+- Inertia dihitung dengan menjumlahkan jarak kuadrat.
+- Elbow method adalah salah satu metode paling populer untuk menentukan nilai optimal dari k.
+- Dalam metode ini, kita memilih nilai k pada titik di mana terjadi penurunan inertia yang tajam dan signifikan.  
+  
+Hands-on:  
+https://colab.research.google.com/drive/1siquTlH3xSfTAlhqoj1L3JmVKj18EHSz?usp=sharing
+  
+### Sistem Rekomendasi
+Dalam konteks machine learning, pengembangan sistem rekomendasi dapat melibatkan supervised learning dan/atau unsupervised learning.  
+  
+#### Jenis-jenis sistem rekomendasi
+- Content-based filtering  
+Sistem rekomendasi yang menyarankan item berdasarkan kemiripan karakteristik atau fitur dengan item yang pernah disukai atau dikonsumsi oleh pengguna. Contohnya, jika pengguna suka film bergenre aksi, maka sistem akan merekomendasikan film lain dengan genre serupa.
+- Collaborative filtering  
+Sistem rekomendasi yang menyarankan item berdasarkan pola perilaku dan preferensi pengguna lain yang mirip. Contohnya, jika pengguna A dan B memiliki riwayat menonton film yang mirip, maka film yang disukai oleh A tapi belum ditonton oleh B dapat direkomendasikan ke B.
+    
+Pada dasarnya, sistem rekomendasi ini menghitung kemiripan/similarity.  
+  
+Bagaimana cara menghitung similarity?  
+- Cosine similarity
+- Euclidian similarity
+
+Hands-on:  
+https://colab.research.google.com/drive/1bmvef4L9req3DY-I4QiHmUSaPJ_qInZo?usp=sharing
