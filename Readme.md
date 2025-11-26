@@ -420,3 +420,119 @@ Fine-tuning adalah proses menyesuaikan model yang sudah dilatih sebelumnya (pret
 Dengan cara ini, model tidak perlu dilatih dari awal, sehingga menghemat waktu dan sumber daya, namun tetap mampu beradaptasi dengan konteks atau domain baru.
 
 ---
+
+# TensorFlow di Dunia Nyata: Model Deployment by Kimberley Blessinda
+
+## Pengenalan terhadap Machine Learning Deployment
+
+Model Deployment adalah tahap terakhir dalam pengembangan model AI. Kita akan lebih berhubungan dengan software engineer pada tahap ini.
+
+- Project Planning & Setup  
+  Tentukan permalasahan yang dikerjakan, tetapkan kebutuhan dan tujuan, serta tentukan cara alokasi sumber daya
+- Data Collection & Labeling  
+  Kumpulkan dan atur data (seperti gambar, teks, data tabular, dll), serta lakukan anotasi ground truth
+- Model Training & Debugging  
+  Implementasi model baseline dengan cepat, menemukan dan mereproduksi metode state-of-the-art untuk domain permasalahan, dan sebagainya
+- Deployment & Monitoring  
+  Tempatkan model ke production, tulis perangkat lunak yang dibutuhkan agar model dapat berjalan dan menghasilkan prediksi
+
+### Fase Deployment Model Machine Learning
+
+- Deployment
+- Evaluation
+- Monitoring
+- Management
+
+### Berbagai Tantangan Model Deployment
+
+- Sensitif terhadap semantics, jumlah, dan kelengkapan data yang masuk
+- Penurunan performa seiring waktu
+- Dan lainnya
+
+### Opsi Model Deployment
+
+- Centralize model di server
+- Distribute model di perangkat pengguna
+
+### Model Inference Options
+
+- Batch Prediction
+- Real Time Prediction
+
+### Opsi Bentuk Model Deployment
+
+- TensorFlow Serving
+- TensorFlow Lite
+- TensorFlow.js
+- Other Language Bindings
+
+## Model Deployment TensorFlow.js
+
+### Apa itu TensorFlow.js
+
+Open-source JS library untuk melatih dan deploying model machine learning di client's browser atau server Node.js
+
+### Tahapan Umum Penggunaan TensorFlow.js
+
+- Build a model
+- Save model
+- Convert
+- Deploy
+
+Hands-on:
+https://colab.research.google.com/drive/1ggM9VmC3y9O9t7uaq2hJF8cz5VvM9qxu#scrollTo=b_Qph3FDOYZx
+
+## Model Deployment: ~~TensorFlow~~ Lite LiteRT
+
+### Apa itu LiteRT?
+
+Open-source deep learning framework untuk menjalankan model TensorFlow langsung di perangkat (on-device)
+
+### Tantangan Model On-Device
+
+Harus menangani beragam jenis perangkat dan tidak memiliki akses ke data sebenarnya. Perlu ada keseimbangan anatara:
+
+- Efisiensi daya
+- Inference latency
+- Akurasi dan
+
+### Tahapan Umum Penggunaan TensorFlow Lite
+
+- Build a model
+- Save model
+- Convert
+- Deploy
+
+Hands-on:
+https://colab.research.google.com/drive/1LF7fG8onq0afuKKRkNxl-rrhPLQ3bYG4#scrollTo=2HGjyQGTI7nz
+
+## Model Deployment: TensorFlow Serving
+
+### Apa itu TensorFlow Serving?
+
+Sistem serving yang flexible dan memiliki performa tinggi untuk model machine learning, yang dirancang khusus untuk production environments
+
+### Tahapan Umum Penggunaan TensorFlow Serving
+
+- Membuat dan train model
+- Simpan model
+- Build & run a docker image
+- Mengirim permintaan prediksi
+
+#### Apa itu Container? Docker?
+
+Container adalah unit standar perangkat uank yang membungkus kode dan semua dependensinya sehingga aplikasi dapat dijalankan secara portabel
+
+##### Bagaimana Membuat Docker Container?
+
+Docker File -> Build -> Docker Image -> Run -> Docker Container
+
+### Apa itu Federated Learning?
+
+Memungkinkan setiap klien melatih modelnya sendiri secara mandiri menggunakan datanya sendiri pada perangkat
+
+### Apa itu TensorFlow Datasets
+
+Kumpulan dataset yang siap digunakan, baik dengan TensorFlow yang siap digunakan, baik dengan TensorFlow maupun framework machine learning Python lainnya
+
+---
