@@ -536,3 +536,94 @@ Memungkinkan setiap klien melatih modelnya sendiri secara mandiri menggunakan da
 Kumpulan dataset yang siap digunakan, baik dengan TensorFlow yang siap digunakan, baik dengan TensorFlow maupun framework machine learning Python lainnya
 
 ---
+
+# ILT-ML7-A-AB: MLOps: Membawa Model ke Lingkungan Production by I Nyoman Yoga Saputra
+
+## Bonjour, MLOps!
+
+### Mari Mulai dari DevOps
+
+DevOps itu mengubungkan gap antara development dan operations. Jadi DevOps adalah seperangkat praktik, alat, dan filosofi budaya yang mengotomatiskan serta mengintegrasikan proses antara tim pengembangan perangkat lunak dan tim IT. Jadi, apa bedanya dengan Machine Learning?
+
+Dalam machine learning, selain kode, kamu juga perlu mengelola data, pelatihan model, dan parameter. Berbeda dengan perangkat lunak statis, model Ml memerlukan pemantauan dan pelatihan ulang secara terus-menerus
+
+MLOps (Machine Learning Operations) adalah seperangkat praktik yang membantu data scientist dan ML engineer dalam mengelola siklus hidup machine leanring (ML). MlOPs = Eternal Knot.
+
+### Manfaat Utama MLOps untuk Proyek Anda
+
+- Increased Productivity
+- Cheaper Model Development
+- Reproducibility
+- Reliability
+- Risk Reduction
+- Easy Monitoring
+
+### Prinsip-Prinsip MLOps
+
+- Reproducibility
+- Versioning
+- Testing
+- Automation
+- Monitoring  
+  Beberapa term penting: feature drifting, input drifting, output drifting
+- Security
+
+### Tingkat Kematangan MLOps
+
+- Level 0: Manual
+- Level 1: ML Pipeline Automation
+- Level 2: Deployment Pipeline Automation
+
+## Tools dalam MLOps
+
+- MLFlow
+- GitHub
+- Docker  
+  Ini untuk alat opensource, kita bisa melakukan skala lebih besar dengan menggunakan layanan lain seperti Kubeflow, Azure Machine Learning, AWS Sagemaker, dan sebagainya.
+
+### MLFlow
+
+MLFlow adalah alat yang membantu melacak dan mengelola eksperimen machine learning dengan mencatat parameter, metrik, dan artefak
+
+### GitHub
+
+GitHub Actions mengotomatiskan seluruh pipeline ML melalui alur kerja CI/CD yang dipicu oleh perubahan pada basis kode
+
+### Docker
+
+Docker mengemas kode ML, dependensi, dan runtime environments ke dalam container terisolasi.
+
+### Apakah Itu Saja yang Kita Butuhkan?
+
+Jika kita ingin melakukan skala lebih besar, ini belum cukup. Kita masih perlu memanggil "companions" kita untuk membantu memantau dan mencatat log dari sistem machine learning kita. (Prometheus, Grafana)
+
+#### Prometheus
+
+Prometheus mengumpulkan metrik secara real-time dari sistem ML yang berjalan di dalam container Docker
+
+#### Grafana
+
+Grafana memvisualisasikan metrik-metrik tersebut untuk membantu memantau performa model, penggunaan sumber daya, dan kesehatan sistem secara efektif.
+
+## End-to-End Use Case: Mengintegrasikan Berbagai Alat dalam Pipeline MLOps
+### Membangun Sistem dengan MLOps Level 1
+Continuous Training: level ini meningkatkan ketahanan dan kemampuan adaptasi sistem ML kita, serta memungkinkan kita untuk melatih ulang model produksi secara berkala berdasarkan data baru.    
+Tahap Eksperimen -> Tahapan Produksi  
+Kita memerlukan tahap eksperimen untuk membangun model yang tepat, dan tahap produksi untuk menjalankan model tersebut dengan benar.
+
+    
+Hands-on: https://drive.google.com/drive/folders/14HFrkfM5NfLrzN5abCB1TtPDvK3szI93
+Link Spreadsheet: https://docs.google.com/presentation/d/1Aquk9JjUxc1_yU2949YKfWGJJJfOdwvW/edit?slide=id.g35dc4d0af44_1_14#slide=id.g35dc4d0af44_1_14
+
+### Langkah Kedepannya
+- Tahap 1: Membangun Sistem Monitoring dan Peringatan
+- Tahap 2: Automate Model Retraining Berdasarkan Metrik
+- Tahap 3: Integrasikan Model Registry dengan Approval Flows
+- Tahap 4: Tingkatkan Skala ke MLOps Level 2
+- Tahap 5: Menerapkan Keamanan & Tata Kelola yang Lebih Lanjut
+
+## Ending Quotes
+“Jangan pernah berhenti belajar, karena teknologi terus berkembang — bahkan saat kamu tidur, bermain game, dan beristirahat.”
+
+---
+
